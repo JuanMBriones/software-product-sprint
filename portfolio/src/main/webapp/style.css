@@ -10,17 +10,20 @@
   margin-top: 20px;
 }
 
-.alt-font {font-family: 'Montserrat', sans-serif !important;}
+.alt-font {
+  font-family: 'Montserrat', 
+  sans-serif !important;
+}
 
 .image_diffuminated {
-    background-image: url("https://wallpaperaccess.com/full/196766.jpg");
+  background-image: url("https://wallpaperaccess.com/full/196766.jpg");
 }
 
 .wrapper {
-    width: 300vh;
-    /*This part is important for centering*/
-    display: grid;
-    place-items: center;
+  width: 300vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
 }
 
 .typing-demo {
@@ -34,14 +37,14 @@
   font-size: 1.6em;
 }
   
-  @keyframes typing {
-    from {
-      width: 0
-    }
+@keyframes typing {
+  from {
+    width: 0
   }
+}
       
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
+}
