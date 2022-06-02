@@ -23,8 +23,8 @@ repos:
     -   id: detect-missing-css-classes
         args:
         - --css-files-dir
-        - .portfolio/src/main/webapp
+        - ./portfolio/src/main/webapp
         - --html-files-dir
-        - .portfolio/src/main/webapp
+        - ./portfolio/src/main/webapp
     -   id: html-tags-blacklist
     -   id: html-attributes-blacklist
