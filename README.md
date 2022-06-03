@@ -1,5 +1,8 @@
 # Google Software Product Sprint
 
+This repo contains JuanMBriones's portfolio ans SPS projects.
+
+👾
 This repo contains the projects you'll work on throughout SPS.
 
 To get started:
