@@ -15,12 +15,50 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
-
+function getExperience() {
+  
+  const greetings = [
+    {
+      'title': 'Data Engineer Intern',
+      'company': 'Neoris',
+      'tasks': [
+        'Designed a CLI tool in Python to help more than 100 ML Engineers to test and deploy models into production.',
+        'Reduced cost of Azure instance by 40% by implementing a Kubernetes Airflow instance and monitoring pod’s status using Graphana.',
+        'Created a Data Warehouse architecture and created ETLs for data transformation with Python.'
+      ],
+      'img': {
+        'path': 'images/neoris_logo.png',
+        'alt': 'Neoris logo'
+      }
+    },
+    {
+      'title': 'Data Engineer Intern',
+      'company': 'Neoris',
+      'tasks': [
+        'Designed a CLI tool in Python to help more than 100 ML Engineers to test and deploy models into production.',
+        'Reduced cost of Azure instance by 40% by implementing a Kubernetes Airflow instance and monitoring pod’s status using Graphana.',
+        'Created a Data Warehouse architecture and created ETLs for data transformation with Python.'
+      ],
+      'img': {
+        'path': 'images/neoris_logo.png',
+        'alt': 'Neoris logo'
+      }
+    },
+    {
+      'title': 'Data Engineer Intern',
+      'company': 'Neoris',
+      'tasks': [
+        'Designed a CLI tool in Python to help more than 100 ML Engineers to test and deploy models into production.',
+        'Reduced cost of Azure instance by 40% by implementing a Kubernetes Airflow instance and monitoring pod’s status using Graphana.',
+        'Created a Data Warehouse architecture and created ETLs for data transformation with Python.'
+      ],
+      'img': {
+        'path': 'images/neoris_logo.png',
+        'alt': 'Neoris logo'
+      }
+    }    
+  ];
   // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
 
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
