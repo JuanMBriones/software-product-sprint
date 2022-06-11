@@ -24,31 +24,34 @@ async function fetchExperienceJSON() {
 }
 
 fetchExperienceJSON().then(experience => {
-    console.log(experience)
-    for (var key in experience) {
-      var title = experience[key].title;
-      var company = experience[key].company;
-      var tasks = [];
+  for (var key in experience) {
+    var title = experience[key].title;
+    var company = experience[key].company;
+    var tasks = [];
     
-      var list_tasks = document.createElement('ul');
-      list_tasks.class = 'list';
-      list_tasks.innerHTML = '';
-      for(var task in experience[key].tasks) {
-        tasks.push(experience[key].tasks[task]);
-        list_tasks.innerHTML += '<li>' + experience[key].tasks[task] + '</li>';
-      }
-      var img_path = experience[key].img.path
-      var img_alt = experience[key].img.alt
-    
-      var badge = document.createElement('div');
-      badge.className = 'badge';
-      badge.innerHTML = 
-        '<h2>' + title + '</h2>' +
-        '<h3>' + company + '</h3>' +
-        list_tasks.innerHTML +
-        '<img src=\"'+ img_path +'\" alt=\"'+ img_alt +'\">'
-      document.getElementById('experience').appendChild(badge);
+    var list_tasks = document.createElement('ul');
+    list_tasks.class = 'list';
+    list_tasks.innerHTML = '';
+      
+    for(var task in experience[key].tasks) {
+      tasks.push(experience[key].tasks[task]);
+      list_tasks.innerHTML += '<li>' + experience[key].tasks[task] + '</li>';
     }
+      
+    var img_path = experience[key].img.path
+    var img_alt = experience[key].img.alt
+    
+    var badge = document.createElement('div');
+      
+    badge.className = 'badge';
+    badge.innerHTML = 
+      '<h2>' + title + '</h2>' +
+      '<h3>' + company + '</h3>' +
+      list_tasks.innerHTML +
+      '<img src=\"'+ img_path +'\" alt=\"'+ img_alt +'\">'
+    
+      document.getElementById('experience').appendChild(badge);
+  }
 });
 
 
