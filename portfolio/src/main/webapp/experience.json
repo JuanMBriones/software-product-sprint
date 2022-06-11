@@ -1,0 +1,60 @@
+[{
+    "title": "Google Software Product Sprint Participant",
+    "company": "Google",
+    "tasks": [],
+    "img": {
+      "path": "images/google_logo.png",
+      "alt": "Google logo"
+    }
+  },
+  {
+    "title": "Open Source Contributor",
+    "company": "OmegaUp",
+    "tasks": [
+      "Improved project documentation for the OmegaUp grader system used by thousands of Latinx contestants.",
+      "Created PR for bugs with tags First Good Issue."
+    ],
+    "img": {
+      "path": "images/omegaup_logo.png",
+      "alt": "OmegaUp logo"
+    }
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Morgan Stanley Capital International",
+    "tasks": [
+      "Designed and tested process workflows on Airflow for scheduling jobs with template files using Python.",
+      "Created CI/CD pipelines for maintenance of workflows and fixed around 30 critical performance bugs."
+    ],
+    "img": {
+      "path": "images/morgan_stanley_logo.jpg",
+      "alt": "Morgan Stanley logo"
+    }
+  },
+  {
+    "title": "Data Engineer Intern",
+    "company": "Neoris",
+    "tasks": [
+      "Designed a CLI tool in Python to help more than 100 ML Engineers to test and deploy models into production.",
+      "Reduced cost of Azure instance by 40% by implementing a Kubernetes Airflow instance and monitoring pod’s status using Graphana.",
+      "Created a Data Warehouse architecture and created ETLs for data transformation with Python."
+    ],
+    "img": {
+      "path": "images/neoris_logo.png",
+      "alt": "Neoris logo"
+    }
+  },
+  {
+    "title": "Software Engineer Intern",
+    "company": "ITESM Research Department",
+    "tasks": [
+      "Developed a full-stack web app for brain historial activity (Django, Angular), used Datastore, Google APIs, and UnitTest for library testing.",
+      "Designed and implemented an IoT architecture for interaction with Empatica E4 and OpenBCI using a Raspberry Pi and MQTT protocol. Used Heroku and Google Cloud platform for hosting.",
+      "Reduced the Data sharing time by 30% by implementing a NoSQL database and implementing data pipelines."
+    ],
+    "img": {
+      "path": "images/itesm_logo.jpeg",
+      "alt": "ITESM logo"
+    }
+  }
+]
