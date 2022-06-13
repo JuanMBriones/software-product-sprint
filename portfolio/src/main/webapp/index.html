@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
   </head>
   <body>
     <div id="content">
@@ -17,89 +17,21 @@
       </div>
     
       <!-- Experience -->
-      <div>
-        <h1>Experience 🛠</h1>
-        <div>
-          <h2>Google Software Product Sprint Participant</h2>
-          <img src="images/google_logo.png" alt="Google logo">
-        </div>
-        <div>
-          <h2>OmegaUp, Open Source Contributor</h2>
-          <ul>
-            <li>Improved project documentation for the OmegaUp grader system used by thousands of Latinx contestants.</li>
-            <li>Created PR for bugs with tags First Good Issue.</li>
-          </ul>
-          <img src="images/omegaup_logo.png" alt="OmegaUp logo">
-        </div>
-        <div>
-          <h2>Morgan Stanley Capital International, Software Engineer</h2>
-          <ul>
-            <li>Designed and tested process workflows on Airflow for scheduling jobs with template files using Python.</li>
-            <li>Created CI/CD pipelines for maintenance of workflows and fixed around 30 critical performance bugs.</li>
-          </ul>
-          <img src="images/morgan_stanley_logo.jpg" alt="Morgan Stanley logo">
-        </div>
-        <div>
-          <h2>Neoris, Data Engineer</h2>
-          <ul>
-            <li>Designed a CLI tool in Python to help more than 100 ML Engineers to test and deploy models into production.</li>
-            <li>Reduced cost of Azure instance by 40% by implementing a Kubernetes Airflow instance and monitoring pod’s status using Graphana.</li>
-            <li>Created a Data Warehouse architecture and created ETLs for data transformation with Python.</li>
-          </ul>
-          <img src="images/neoris_logo.png" alt="Neoris logo">
-        </div> 
-        <div>
-            <h2>ITESM Research Department, Software Engineer Intern</h2>
-            <ul>
-                <li>Developed a full-stack web app for brain historial activity (Django, Angular), used Datastore, Google APIs, and UnitTest for library testing.</li>
-                <li>Designed and implemented an IoT architecture for interaction with Empatica E4 and OpenBCI using a Raspberry Pi and MQTT protocol. Used Heroku and Google Cloud platform for hosting.</li>
-                <li>Reduced the Data sharing time by 30% by implementing a NoSQL database and implementing data pipelines.</li>
-            </ul>
-            <img src="images/itesm_logo.jpeg" alt="ITESM logo">
-        </div> 
-        <div>
-            <h2>ITESM Research Department, Machine Learning Engineer</h2>
-            <ul>
-              <li>Implemented ML algorithms: SVM and random forest and evaluated them using SHAP values on Python and R.</li>
-              <li>Designed endpoints for the ML model with flask for using the model on different applications.</li>
-            </ul>
-            <img src="images/itesm_logo.jpeg" alt="ITESM logo">
-        </div>
-        <div>
-            <h2>Operadora Futurama</h2>
-            <h3>Software Engineer</h3>
-            <ul>
-                <li>Improved decision-making time by 20% by designing and implementing a full-stack web app for Business Intelligence with Java, Spring, MongoDB and React.</li>
-                <li>Tested using Mockito Framework and deployed it on an on-premise Linux environment.</li>
-            </ul>
-        </div>
+      <h1>Experience 🛠</h1>
+      <div id="experience">
       </div>
-      
-      <!-- Projects -->
       <div>
-        <h1>Projects 🚀</h1>
-        <div>
-          <h2>Obiecti</h2>
-          <ul>
-            <li>Design a compiler and a new OOP language with REPL using Python and PLY.</li>
-            <li>Used PyTest for testing.</li>
-            <li><a href="https://www.github.com/JuanMBriones/Obiecti">Check it out!</a></li>
-          </ul>
-          
-        </div>
-        <div>
-          <h2>COVID Tracker</h2>
-          <ul>
-            <li>COVID Tracker Designed a Twitter bot using Tweepy API for monitoring COVID cases in Nuevo Leon.</li>
-            <li>Created an EC2 instance for hosting using Docker. Implemented a product-consumer algorithm and used CRON jobs for optimizing the request for the API by 40%.</li>
-            <li>Used Python.</li>
-            <li><a href="https://www.github.com/JuanMBriones">Check it out!</a></li>
-          </ul>
-        </div>
+        <h3>Contact me! 👾</h3>
+        <form name="contactForm" id="contactForm" method="post" action="contactServlet">
+          Email: <input type="email" name="email"/> <br/>
+          Message: <input type="text" name="message"/> <br/>
+          <input type="submit" value="Send🥳" />
+        </form>
       </div>
 
 
     </div>
     
+    <script src="script.js"></script>
   </body>
 </html>
