@@ -146,3 +146,7 @@ footer h2 {
 .right-alignment {
     text-align: right;
 }
+
+.center-title {
+    text-align: center;
+}

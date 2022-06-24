@@ -23,29 +23,7 @@ async function fetchExperienceJSON() {
   return experience;
 }
 
-/*
-
-<section class="project">
-            <div class="container">
-                <div class="row">
-                    <!-- Left column -->
-                    <div class="col-sm right-alignment">
-                        <h2>Lorem ipsum dolor sit amet consectetur, <br /> adipisicing elit.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus labore laboriosam quibusdam repellat itaque nisi earum cum omnis magni! Nesciunt in dicta dolor veniam voluptate inventore voluptatibus, quasi odit?</p>
-                        <a href="" class="button">See more</a>
-                    </div>
-                    <!-- Right column -->
-                    <div class="col-sm">
-                        <figure>
-                            <img src="img/Twitter_logo.png" alt="Twitter Logo">
-
-                            <figcaption>Twitter Logo🎉</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-*/
+let cont = 0;
 
 fetchExperienceJSON().then(experience => {
   for (var key in experience) {
@@ -66,37 +44,52 @@ fetchExperienceJSON().then(experience => {
     var img_alt = experience[key].img.alt
     
     var section = document.createElement('section');
-    section.class = 'project';
-    var container = document.createElement('div');
-    container.class = 'container';
-    var row = document.createElement('div');
-    row.class = 'row';
-
-    <div class="col-sm right-alignment">
-                        <h2>Lorem ipsum dolor sit amet consectetur, <br /> adipisicing elit.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus labore laboriosam quibusdam repellat itaque nisi earum cum omnis magni! Nesciunt in dicta dolor veniam voluptate inventore voluptatibus, quasi odit?</p>
-                        <a href="" class="button">See more</a>
-                    </div>
-                    <!-- Right column -->
-                    <div class="col-sm">
-                        <figure>
-                            <img src="img/Twitter_logo.png" alt="Twitter Logo">
-
-                            <figcaption>Twitter Logo🎉</figcaption>
-                        </figure>
-                    </div>
-
-
-    var badge = document.createElement('div');
-      
-    badge.className = 'badge';
-    badge.innerHTML = 
-      '<h2>' + title + '</h2>' +
-      '<h3>' + company + '</h3>' +
-      list_tasks.innerHTML +
-      '<img src=\"'+ img_path +'\" alt=\"'+ img_alt +'\">'
+    section.classList.add("project");
     
-      document.getElementById('experience').appendChild(badge);
+    if(cont%2) {
+        section.classList.add("blue");
+    }
+
+    var container = document.createElement('div');
+    container.classList.add("container");
+
+    var row = document.createElement('div');
+    row.classList.add("row");
+    
+    var left_col = document.createElement('div');
+    left_col.classList.add("col-sm");
+    left_col.classList.add("right-alignment");
+
+    left_col.innerHTML = 
+        '<h2>Lorem ipsum dolor sit amet consectetur, <br /> adipisicing elit.</h2>' +
+        '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus labore laboriosam quibusdam repellat itaque nisi earum cum omnis magni! Nesciunt in dicta dolor veniam voluptate inventore voluptatibus, quasi odit?</p>' + 
+        '<a href="" class="button">See more</a>';
+
+    var right_col = document.createElement('div');
+    right_col.classList.add("col-sm");
+
+    var figure = document.createElement('figure');
+    figure.innerHTML = 
+        '<img src='+ img_path +' alt='+ img_alt +'>' +
+        '<figcaption>Twitter Logo🎉</figcaption>';
+    
+    right_col.appendChild(figure);
+    
+    if(cont%2) {
+        row.appendChild(right_col);
+        row.appendChild(left_col);
+    }
+    else {
+        row.appendChild(left_col);
+        row.appendChild(right_col);
+    }
+    
+    container.appendChild(row);
+    section.appendChild(container);
+    
+    document.getElementById('experience').appendChild(section);
+
+    cont += 1;
   }
 });
 
