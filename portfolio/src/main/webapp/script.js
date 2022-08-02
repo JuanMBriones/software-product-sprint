@@ -58,7 +58,10 @@ fetchExperienceJSON().then(experience => {
     
     var left_col = document.createElement('div');
     left_col.classList.add("col-sm");
-    left_col.classList.add("right-alignment");
+
+    if(!(cont%2)) {
+        left_col.classList.add("right-alignment");
+    }
 
     left_col.innerHTML = 
         '<h2>Lorem ipsum dolor sit amet consectetur, <br /> adipisicing elit.</h2>' +
