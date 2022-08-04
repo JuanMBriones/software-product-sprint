@@ -64,9 +64,12 @@ fetchExperienceJSON().then(experience => {
     }
 
     left_col.innerHTML = 
-        '<h2>Lorem ipsum dolor sit amet consectetur, <br /> adipisicing elit.</h2>' +
-        '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus labore laboriosam quibusdam repellat itaque nisi earum cum omnis magni! Nesciunt in dicta dolor veniam voluptate inventore voluptatibus, quasi odit?</p>' + 
-        '<a href="" class="button">See more</a>';
+        '<h2>'+ experience[key].title +'</h2>';
+
+    left_col.appendChild(list_tasks);
+    
+    /*'<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus labore laboriosam quibusdam repellat itaque nisi earum cum omnis magni! Nesciunt in dicta dolor veniam voluptate inventore voluptatibus, quasi odit?</p>' + 
+        '<a href="" class="button">See more</a>';*/
 
     var right_col = document.createElement('div');
     right_col.classList.add("col-sm");
@@ -74,7 +77,7 @@ fetchExperienceJSON().then(experience => {
     var figure = document.createElement('figure');
     figure.innerHTML = 
         '<img src='+ img_path +' alt='+ img_alt +'>' +
-        '<figcaption>Twitter Logo🎉</figcaption>';
+        '<figcaption>' + experience[key].company +' Logo🎉</figcaption>';
     
     right_col.appendChild(figure);
     

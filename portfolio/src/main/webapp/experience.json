@@ -1,7 +1,9 @@
 [{
     "title": "Google Software Product Sprint Participant",
     "company": "Google",
-    "tasks": [],
+    "tasks": [
+        "Done this portfolio"
+    ],
     "img": {
       "path": "images/google_logo.png",
       "alt": "Google logo"
