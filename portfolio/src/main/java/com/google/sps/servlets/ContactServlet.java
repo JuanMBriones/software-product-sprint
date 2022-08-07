@@ -33,6 +33,6 @@ public class ContactServlet extends HttpServlet {
         .build();
       datastore.put(commentEntity);
       
-      response.sendRedirect("https://8081-cs-1078404162001-default.cs-us-central1-pits.cloudshell.dev/");
+      response.sendRedirect("https://jgarciabriones-sps-summer22.uc.r.appspot.com");
   }
 }
