@@ -18,9 +18,20 @@
 
 
 async function fetchExperienceJSON() {
-  const response = await fetch("./experience.json")
+  const response = await fetch("/list-experience")
   const experience = await response.json();
   return experience;
+}
+
+function loadExperience() {
+
+    fetch('/list-experience').then(response => console.log(response.json()));
+    /*fetch('/list-experience').then(response => response.json()).then((tasks) => {
+      const taskListElement = document.getElementById('task-list');
+      tasks.forEach((task) => {
+        taskListElement.appendChild(createTaskElement(task));
+      })
+    });*/
 }
 
 let cont = 0;
