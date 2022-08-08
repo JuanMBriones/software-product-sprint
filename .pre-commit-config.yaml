@@ -19,7 +19,6 @@ repos:
     sha: v1.1.0
     hooks:
     -   id: forbid-html-img-without-alt-text
-    -   id: forbid-non-std-html-attributes
     -   id: detect-missing-css-classes
         args:
         - --css-files-dir

@@ -3,34 +3,86 @@
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap-grid.css" type="text/css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Inknut+Antiqua:wght@300&display=swap" rel="stylesheet">
+        
+
   </head>
   <body>
-    <div id="content">
-      <div style="background-image: url('https://wallpaperaccess.com/full/196766.jpg'); background-size: cover; height:480px; padding-top:80px;"> 
-        <div class="wrapper">
-          <div class="typing-demo alt-font">
-            Juan Manuel Garcia Briones
-          </div>
+    <!-- NavBar -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a href="#experience">
+                    Projects
+                </a>
+            </li>
+            <li class="empty"></li>
+            <li>
+                <a href="#experience">
+                    Experience
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/juanmbriones" target="_blank">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="row">
+                <!-- Left column -->
+                <div class="col-sm">
+                    <h1>Hi there,<br/>I'm JuanMa</h1>
+                    <ul>
+                        <li>CS student</li>
+                        <li>Web developer</li>
+                        <li>SPS participant!</li>
+                    </ul>
+                    <a href="" class="button">LinkedIn</a>
+                </div>
+
+                <!-- Right column -->
+                <div class="col-sm">
+                    <figure>
+                        <img src="images/me2.png" alt="JuanMa" class="intro-img" />
+                        <figcaption>Hello there!</figcaption>
+                    </figure>
+                </div>
+            </div>
+            
         </div>
-      </div>
+
+    </header>
     
-      <!-- Experience -->
-      <h1>Experience 🛠</h1>
-      <div id="experience">
-      </div>
-      <div>
-        <h3>Contact me! 👾</h3>
-        <form name="contactForm" id="contactForm" method="post" action="contactServlet">
-          Email: <input type="email" name="email"/> <br/>
-          Message: <input type="text" name="message"/> <br/>
-          <input type="submit" value="Send🥳" />
-        </form>
-      </div>
-
-
+    <!-- Experience -->
+    <div id="experience">
+        <h1 class="center-title">Experience 🛠</h1>
     </div>
+
+    <footer id="contact">
+        <h2>Want to contact with me?</h2>
+        <form name="contactForm" id="contactForm" method="post" action="contactServlet">
+            Email: <input required type="email" name="email"/> <br/>
+            Message: <input required type="text" name="message" style="height:200px"/> <br/>
+            <input type="submit" value="Send🥳" />
+          </form>
+        <p>Designed by JuanMa 2022</p>
+    </footer>
     
     <script src="script.js"></script>
   </body>
