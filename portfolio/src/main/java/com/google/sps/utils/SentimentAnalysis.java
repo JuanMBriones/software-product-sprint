@@ -32,8 +32,6 @@ public class SentimentAnalysis {
         try (DataOutputStream wr = new DataOutputStream(http.getOutputStream())) {
             wr.write(out);
         }
-        /*OutputStream stream = http.getOutputStream();
-        stream.write(out);*/
         
         StringBuilder content;
 
